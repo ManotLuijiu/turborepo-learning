@@ -33,7 +33,10 @@
     "turbo": "latest"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
+    "apps/next-app/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "apps/next-next-app/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
     ],
     "packages/ui/**/*.{js,ts,jsx,tsx}": [
