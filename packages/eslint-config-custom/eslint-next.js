@@ -52,13 +52,13 @@ module.exports = {
     {
       // 3) Now we enable eslint-plugin-testing-library rules or preset only for matching files!
       env: {
-        'jest/globals': true,
+        jest: true,
       },
       files: ['**/__tests__/**/*.[jt]s:(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       extends: [
         'plugin:testing-library/react',
-        // 'plugin:testing-library/dom',
-        // 'plugin:jest-dom/recommended',
+        'plugin:testing-library/dom',
+        'plugin:jest-dom/recommended',
         'plugin:jest/recommended',
       ],
       rules: {
