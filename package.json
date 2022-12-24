@@ -13,7 +13,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "rimraf dist",
-    "prepare": "husky install"
+    "prepare": "npx husky install"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.19.1",
