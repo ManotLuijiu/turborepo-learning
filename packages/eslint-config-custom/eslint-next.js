@@ -19,7 +19,6 @@ module.exports = {
     next: {
       rootDir: [
         'apps/next-app/',
-        'apps/next-next-app/',
         'packages/ui/',
         'packages/eslint-config-custom/',
         'package/tsconfig/',
@@ -47,6 +46,7 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
+    '@next/next/no-html-link-for-pages': ['error', './src/pages/'],
   },
   overrides: [
     {
@@ -55,7 +55,18 @@ module.exports = {
         jest: true,
       },
       files: ['**/__tests__/**/*.[jt]s:(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
+      extends: [
+        'plugin:testing-library/react',
+        // 'plugin:testing-library/dom',
+        // 'plugin:jest-dom/recommended',
+        'plugin:jest/recommended',
+      ],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'off',
+          { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
+        ],
+      },
     },
   ],
   ignorePatterns: [
@@ -65,5 +76,6 @@ module.exports = {
     '.turbo',
     '.next',
     'public',
+    'coverage',
   ],
 };
