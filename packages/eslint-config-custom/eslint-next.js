@@ -62,7 +62,7 @@ module.exports = {
       extends: [
         'plugin:testing-library/react',
         'plugin:testing-library/dom',
-        'plugin:jest-dom/recommended',
+        // 'plugin:jest-dom/recommended',
         'plugin:jest/recommended',
       ],
       rules: {
