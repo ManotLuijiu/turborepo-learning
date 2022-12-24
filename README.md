@@ -73,3 +73,5 @@ Learn more about the power of Turborepo:
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
 [![Node.js CI Root](https://github.com/ManotLuijiu/turborepo-learning/actions/workflows/root.yaml/badge.svg)](https://github.com/ManotLuijiu/turborepo-learning/actions/workflows/root.yaml)
+
+[![Node.js CI Server](https://github.com/ManotLuijiu/turborepo-learning/actions/workflows/server.yaml/badge.svg)](https://github.com/ManotLuijiu/turborepo-learning/actions/workflows/server.yaml)
