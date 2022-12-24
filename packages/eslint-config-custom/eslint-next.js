@@ -15,7 +15,7 @@ module.exports = {
     'plugin:import/typescript',
     'prettier',
   ],
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['import', 'jest-dom', '@typescript-eslint'],
   settings: {
     next: {
       rootDir: [
