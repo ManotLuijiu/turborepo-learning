@@ -14,7 +14,7 @@ module.exports = {
   ],
   plugins: ['import', '@typescript-eslint'],
   parserOptions: {
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.json', '.tsconfig.lint.json'],
   },
   settings: {
     'import/parsers': {
@@ -38,6 +38,12 @@ module.exports = {
       },
       files: ['**/__tests__/**/*.[jt]s', '**/?(*.)+(spec|test).[jt]s'],
       extends: ['plugin:jest/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'off',
+          { devDependencies: ['**/?(*.)+(spec|test).[jt]s'] },
+        ],
+      },
     },
   ],
   ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist', 'coverage'],
