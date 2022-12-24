@@ -7,7 +7,7 @@ module.exports = {
     'next/core-web-vitals',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    // 'plugin:jest/recommended',
+    'plugin:jest/recommended',
     'airbnb',
     'airbnb-typescript',
     'plugin:import/errors',
@@ -61,7 +61,7 @@ module.exports = {
       files: ['**/__tests__/**/*.[jt]s:(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       extends: [
         'plugin:testing-library/react',
-        // 'plugin:testing-library/dom',
+        'plugin:testing-library/dom',
         // 'plugin:jest-dom/recommended',
         'plugin:jest/recommended',
       ],
