@@ -7,6 +7,7 @@ module.exports = {
     'next/core-web-vitals',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:jest/recommended',
     'airbnb',
     'airbnb-typescript',
     'plugin:import/errors',
@@ -23,6 +24,9 @@ module.exports = {
         'packages/eslint-config-custom/',
         'package/tsconfig/',
       ],
+    },
+    jest: {
+      version: require('jest/package.json').version,
     },
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],

@@ -5,9 +5,4 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
-  settings: {
-    jest: {
-      version: require('jest/package.json').version,
-    },
-  },
 };
