@@ -26,7 +26,7 @@ module.exports = {
       ],
     },
     jest: {
-      version: require('jest/package.json').version,
+      version: 29,
     },
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
