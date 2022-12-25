@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "rimraf dist && npm run build && nodemon ./dist/src/server.js",
+    "start": "node server",
     "build": "rimraf dist && tsc",
     "test": "jest --coverage",
     "lint": "eslint src --fix",
