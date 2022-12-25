@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [".env"],
-  "globalEnv": ["OPENAI_API_KEY", "NEXTAUTH_URL"],
+  "globalEnv": ["OPENAI_API_KEY", "NEXTAUTH_URL", "PORT"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],

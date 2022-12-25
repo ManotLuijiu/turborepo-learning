@@ -3,6 +3,8 @@
   "display": "Server",
   "extends": "./base.json",
   "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "target": "ES6",
     "noEmit": false,
     "module": "commonjs",
