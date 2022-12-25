@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { CoolInterface } from 'server/src/lib/CoolInterface';
 import { Button } from 'ui';
@@ -31,7 +32,9 @@ const Home: NextPage = () => (
         <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
           pages/index.tsx
         </code>
-        <Button />
+        <Link href="http://localhost:5173">
+          <Button />
+        </Link>
       </p>
     </main>
 
