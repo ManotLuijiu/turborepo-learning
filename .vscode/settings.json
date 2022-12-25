@@ -1,5 +1,19 @@
 {
   "cSpell.words": ["esbuild"],
   "window.zoomLevel": 0,
-  "files.autoSave": "onFocusChange"
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "html.suggest.html5": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.foldingStrategy": "indentation",
+    "editor.indentSize": "tabSize",
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.enable": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.extraLiners": "head, body, /html"
 }
