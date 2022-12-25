@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/mbone/",
-      "destination": "https://turborepo-learning-next-app.vercel.app/mbone/"
+      "destination": "https://www.moocoding.com/mbone/"
     },
     {
       "source": "/mbone/:match*",
-      "destination": "https://turborepo-learning-next-app.vercel.app/mbone/:match*"
+      "destination": "https://www.moocoding.com/mbone/:match*"
     },
     {
       "source": "/",
-      "destination": "https://turborepo-learning-next-app.vercel.app/"
+      "destination": "https://www.moocoding.com/"
     },
     {
       "source": "/:match*",
-      "destination": "https://turborepo-learning-next-app.vercel.app/:match*"
+      "destination": "https://www.moocoding.com/:match*"
     }
   ]
 }

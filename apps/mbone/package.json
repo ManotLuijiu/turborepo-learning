@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3001",
-    "build": "vite build --base=/mbone",
+    "build": "vite build --base=https://www.moocoding.com/mbone/",
     "preview": "vite preview"
   },
   "devDependencies": {
