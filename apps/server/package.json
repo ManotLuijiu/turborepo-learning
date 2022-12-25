@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rimraf dist && npm run build && nodemon ./dist/src/server.js",
     "start": "node server",
-    "build": "rimraf dist && tsc",
+    "build": "tsc",
     "test": "jest --coverage",
     "lint": "eslint src --fix",
     "clean": "rimraf dist"
