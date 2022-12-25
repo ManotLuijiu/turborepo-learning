@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/mbone/",
+      "destination": "https://turborepo-learning-next-app.vercel.app/mbone/"
+    },
+    {
+      "source": "/mbone/:match*",
+      "destination": "https://turborepo-learning-next-app.vercel.app/mbone/:match*"
+    },
+    {
+      "source": "/",
+      "destination": "https://turborepo-learning-next-app.vercel.app/"
+    },
+    {
+      "source": "/:match*",
+      "destination": "https://turborepo-learning-next-app.vercel.app/:match*"
+    }
+  ]
+}

@@ -32,7 +32,7 @@ const Home: NextPage = () => (
         <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
           pages/index.tsx
         </code>
-        <Link href="http://localhost:5173">
+        <Link href="http://localhost:3001">
           <Button />
         </Link>
       </p>
